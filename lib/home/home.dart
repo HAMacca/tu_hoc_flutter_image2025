@@ -142,7 +142,7 @@ class _ScreeHomeState extends State<ScreeHome> {
                         onPressed: () {
                           nameController.clear();
                         },
-                        icon: Icon(Icons.clear)),
+                        icon: const Icon(Icons.clear)),
                     filled: true,
                     fillColor: Colors.white,
                     hintText: 'Nhập tên sản phẩm',
