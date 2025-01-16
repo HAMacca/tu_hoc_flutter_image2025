@@ -9,6 +9,7 @@ class ScreeHomeImage extends StatelessWidget {
       body: Column(
         children: [Image.asset('assets\images\ang')],
       ),
+      //ang
     );
   }
 }
