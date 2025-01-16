@@ -19,6 +19,10 @@ class ScreeHomeImage extends StatelessWidget {
           const Text(
             'Ảnh vừa sửa',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            'cảnh sửa ở đây',
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           )
         ],
       ),
