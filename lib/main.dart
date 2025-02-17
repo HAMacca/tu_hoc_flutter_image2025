@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tu_hoc_flutter/home/home.dart';
-import 'package:tu_hoc_flutter/home_image/home_image.dart';
+
+import 'home/hom_body.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ScreeHomeImage(),
+      home: ScreenHomeBody(),
     );
   }
 }
