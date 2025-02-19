@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-
 import '../model/profile_model.dart';
 
 class ScreenHomeBody extends StatefulWidget {
@@ -18,11 +17,10 @@ class _ScreenHomeBodyState extends State<ScreenHomeBody> {
     getDataApi();
     super.initState();
   }
-
+  
   List<ProfileModel> listData = [];
-
   Future<void> getDataApi() async {
-    final url = 'https://jsonplaceholder.typicode.com/users';
+    String url = 'https://jsonplaceholder.typicode.com/users';
     try {
       var response = await http.get(Uri.parse(url));
       if (response.statusCode == 200) {
