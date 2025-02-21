@@ -27,7 +27,6 @@ class _LoginState extends State<Login> {
 
   Future<BaseResponseApi?> login(BuildContext context) async {
     String url = "https://admin.baobibigstar.com/api/User/Login";
-
     try {
       var res = await http.post(
         Uri.parse(url),
@@ -43,10 +42,8 @@ class _LoginState extends State<Login> {
       );
       final Map<String, dynamic> jsonResponse = jsonDecode(res.body);
       var result = BaseResponseApi.fromJson(jsonResponse);
-
       if (result.success ?? false) {
         AppData.auth = LoginModel.fromJson(result.data);
-
         Navigator.push(
           context,
           MaterialPageRoute(
