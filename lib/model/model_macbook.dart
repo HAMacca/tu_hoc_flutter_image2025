@@ -1,14 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-// {
-//     "id": "7",
-//     "name": "Apple MacBook Pro 16",
-//     "data": {
-//         "year": 2019,
-//         "price": 1849.99,
-//         "CPU model": "Intel Core i9",
-//         "Hard disk size": "1 TB"
-//     }
-// }
 class Mac {
   String? id;
   String? name;
@@ -22,7 +11,7 @@ class Mac {
     return Mac(
       id: json['id'],
       name: json['name'],
-      data: json['data']
+      data: json['data'] != null
           ? Data.fromJson(json['data'] as Map<String, dynamic>)
           : null,
     );
